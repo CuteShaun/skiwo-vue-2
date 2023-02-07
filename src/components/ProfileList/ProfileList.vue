@@ -52,19 +52,34 @@ export default {
     watch: {
         users: function () {
             if (this.sortQuery) {
-                this.state.userList = getSortedList([...this.users], this.sortQuery);
+                this.state.userList = getFilteredList(
+                    getSortedList([...this.users], this.sortQuery),
+                    this.searchQuery
+                );
             }
+
             if (this.searchQuery) {
-                this.state.userList = getFilteredList([...this.users], this.searchQuery);
-            } else {
+                this.state.userList = getSortedList(
+                    getFilteredList([...this.users], this.searchQuery),
+                    this.sortQuery
+                );
+            }
+
+            if (!this.searchQuery && !this.sortQuery) {
                 this.state.userList = [...this.users];
             }
         },
         searchQuery: function () {
-            this.state.userList = getFilteredList([...this.users], this.searchQuery);
+            this.state.userList = getSortedList(
+                getFilteredList([...this.users], this.searchQuery),
+                this.sortQuery
+            );
         },
         sortQuery: function () {
-            this.state.userList = getSortedList([...this.users], this.sortQuery);
+            this.state.userList = getFilteredList(
+                getSortedList([...this.users], this.sortQuery),
+                this.searchQuery
+            );
         },
     },
 };
