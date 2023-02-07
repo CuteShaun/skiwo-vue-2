@@ -13,6 +13,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
+    base: '/skiwo-vue-2/',
     routes,
     mode: 'history'
 })

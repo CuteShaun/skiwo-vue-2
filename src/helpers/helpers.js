@@ -25,8 +25,7 @@ export const getFilteredList = (charactersList = [], searchText = "") => {
         }
 
         return `${item.name.first.toLowerCase()} ${item.name.last.toLowerCase()}`.includes(
-            searchText
-        );
+            searchText.toLowerCase())
     });
 
     return filtered;

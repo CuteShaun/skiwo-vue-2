@@ -44,5 +44,3 @@ export default {
     props: { prop: Array, id: String, name: String, person: Object },
 };
 </script>
-
-<style scoped></style>

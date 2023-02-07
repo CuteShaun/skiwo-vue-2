@@ -1,5 +1,5 @@
 <template>
-    <div class="select">
+    <div class="select mb-3 cs:mb-0">
         <select id="standard-select" @change="sendSortQuery" selected="Sort by">
             <option disabled selected value="Sort by">Sort by</option>
             <option>Name</option>

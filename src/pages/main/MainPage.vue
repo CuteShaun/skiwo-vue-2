@@ -1,7 +1,7 @@
 <template>
         <main class="user-list">
             <div class="mx-auto max-w-screen-lg px-4 pt -8 sm:px-8">
-                <div class="flex items-center px-8 controls mb-5">
+                <div class="flex items-center controls flex-wrap-reverse lg:flex-nowrap px-4 pt -8 sm:px-8 mb-5">
                     <SearchInput @set-search="setSearchQuery" />
                     <SortDropdown @set-sort="setSortQuery" />
                 </div>

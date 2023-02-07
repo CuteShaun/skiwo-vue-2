@@ -8,6 +8,9 @@ module.exports = {
       colors: {
         brand: "#ff5b24",
     },
+    screens: {
+      'cs': '947px'
+    }
     },
   },
   plugins: [],
