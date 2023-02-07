@@ -9,5 +9,5 @@ first install dependencies with `npm install` then run the development server `n
 
 You are awesome, enjoy!
 
-![random cat image](https://aws.random.cat/)
+![random cat image](https://placekitten.com/g/400/500)
 
