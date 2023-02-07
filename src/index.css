@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --brand-color: #ff5b24;
+    --brand-color-light: #ffccb3;
+    --select-border: #ff5b24;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+}
+
+* {
+    box-sizing: border-box;
+}
