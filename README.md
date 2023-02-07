@@ -1,24 +1,13 @@
-# skiwo-user
+# Skiwo Frontend Home Assignment
 
-## Project setup
-```
-yarn install
-```
+## Getting Started
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+You can find demo on gh-pages here: [link](https://cuteshaun.github.io/skiwo-vue-2/)
 
-### Compiles and minifies for production
-```
-yarn build
-```
+If you want run a project in dev mode,
+first install dependencies with `npm install` then run the development server `npm run serve`
 
-### Lints and fixes files
-```
-yarn lint
-```
+You are awesome, enjoy!
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![random cat image](https://placekitten.com/g/400/500)
+
