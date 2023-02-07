@@ -1,13 +1,14 @@
 # skiwo-user
+See it on gh-pages [link](https://cuteshaun.github.io/skiwo-vue-2/).
 
 ## Project setup
 ```
-yarn install
+npm install
 ```
 
-### Compiles and hot-reloads for development
+### Project run
 ```
-yarn serve
+npm run serve
 ```
 
 ### Compiles and minifies for production
