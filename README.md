@@ -1,12 +1,13 @@
-# skiwo-user
-See it on gh-pages [link](https://cuteshaun.github.io/skiwo-vue-2/).
+# Skiwo Frontend Home Assignment
 
-## Project setup
-```
-npm install
-```
+## Getting Started
 
-### Project run
-```
-npm run serve
-```
+You can find demo on gh-pages here: [link](https://cataas.com/cat)
+
+If you want run a project in dev mode,
+first install dependencies with `npm install` then run the development server `npm run serve`
+
+You are awesome, enjoy!
+
+![random cat image](https://cataas.com/cat)
+
