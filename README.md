@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-You can find demo on gh-pages here: [link](https://cataas.com/cat)
+You can find demo on gh-pages here: [link](https://cuteshaun.github.io/skiwo-vue-2/)
 
 If you want run a project in dev mode,
 first install dependencies with `npm install` then run the development server `npm run serve`
