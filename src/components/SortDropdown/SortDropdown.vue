@@ -1,6 +1,6 @@
 <template>
     <div class="select mb-3 cs:mb-0">
-        <select id="standard-select" :value="sortQuery ? sortQuery : 'Sort by'" default-value="Sort by" selected="Sort by" @input="sendSortQuery">
+        <select id="standard-select" :value="sortQuery ? sortQuery : 'Sort by'" selected="Sort by" @input="sendSortQuery">
             <option disabled selected value="Sort by">Sort by</option>
             <option>Name</option>
             <option>Age</option>
