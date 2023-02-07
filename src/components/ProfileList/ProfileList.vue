@@ -51,7 +51,14 @@ export default {
     },
     watch: {
         users: function () {
-            this.state.userList = this.users;
+            if (this.sortQuery) {
+                this.state.userList = getSortedList([...this.users], this.sortQuery);
+            }
+            if (this.searchQuery) {
+                this.state.userList = getFilteredList([...this.users], this.searchQuery);
+            } else {
+                this.state.userList = [...this.users];
+            }
         },
         searchQuery: function () {
             this.state.userList = getFilteredList([...this.users], this.searchQuery);
