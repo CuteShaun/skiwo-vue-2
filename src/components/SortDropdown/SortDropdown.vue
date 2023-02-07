@@ -10,8 +10,6 @@
 </template>
 
 <script>
-import "../../index.css";
-
 export default {
     name: "SortDropdown",
     data: function () {
