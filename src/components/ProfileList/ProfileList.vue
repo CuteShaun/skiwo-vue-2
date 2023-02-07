@@ -17,7 +17,7 @@
                             </tr>
                         </thead>
                         <tbody class="text-gray-500">
-                            <tr v-for="person in state.userList" :key="person.id.value">
+                            <tr v-for="person in filteredList" :key="person.id.value">
                                 <ProfileCard :person="person" />
                             </tr>
                         </tbody>
@@ -49,36 +49,11 @@ export default {
         searchQuery: String,
         sortQuery: String,
     },
-    watch: {
-        users: function () {
-            if (this.sortQuery) {
-                this.state.userList = getFilteredList(
-                    getSortedList([...this.users], this.sortQuery),
-                    this.searchQuery
-                );
-            }
-
-            if (this.searchQuery) {
-                this.state.userList = getSortedList(
-                    getFilteredList([...this.users], this.searchQuery),
-                    this.sortQuery
-                );
-            }
-
-            if (!this.searchQuery && !this.sortQuery) {
-                this.state.userList = [...this.users];
-            }
-        },
-        searchQuery: function () {
-            this.state.userList = getSortedList(
+    computed: {
+        filteredList: function () {
+            return getSortedList(
                 getFilteredList([...this.users], this.searchQuery),
                 this.sortQuery
-            );
-        },
-        sortQuery: function () {
-            this.state.userList = getFilteredList(
-                getSortedList([...this.users], this.sortQuery),
-                this.searchQuery
             );
         },
     },
