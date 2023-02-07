@@ -17,7 +17,6 @@
 import Paginate from "vuejs-paginate";
 import getUsers from "../../services/RandomUserService.js";
 import { RANDOM_USER_URL_PAGE } from "../../constants/constants";
-import "../../index.css";
 
 export default {
     name: "BasePagination",

@@ -48,7 +48,6 @@
 <script>
 import Fragment from "vue-fragment";
 import Vue from "vue";
-import "../../index.css";
 
 export default {
     name: "ProfileCard",
